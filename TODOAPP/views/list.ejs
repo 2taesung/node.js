@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>할일 리스트</h1>
+    <% for (let i = 0; i < posts.length; i++) { %>
+
+        <h2>할일 제목 : <%= posts[i].제목 %></h2>
+        <h3>할일 마감날짜 : <%= posts[i].날짜 %></h3>
+        <% } %>
+
+    <!-- EJS는 HTML 템플릿 엔진 라이브러리 -->
+    <!-- ejs는 views폴더에 꼭 넣어주어야한다 안그러면 멋진 에러가 뜬다 -->
+</body>
+</html>
